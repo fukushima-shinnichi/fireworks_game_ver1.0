@@ -1,0 +1,568 @@
+/*****   view all backgraund   ******/
+body {
+  background-image: url(img/mainBackgraund.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+div.topImgLayer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 150%;
+  margin: 0px;
+  padding: 0px;
+  background-color: rgba(255,255,255,0.5);
+}
+
+div.siteView {
+  margin: 50px auto;
+  width: 1000px;
+  height: 700px;
+  border-radius: 50px;
+  border: 3px solid #fff;
+  overflow: hidden;
+}
+
+/********   all view size   ******************/
+div.backgraundImg,div.gameView {
+  width: 1000px;
+  height: 700px;
+}
+
+/**********   button share   *******************/
+button {
+  border: none;
+  border-radius: 41.5px;
+  background-color: rgba(255,192,203,0.9);
+}
+
+button p {
+  font-family: 'Kelly Slab', cursive;
+  font-size: 50px;
+  margin: 0px;
+  text-align: center;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button p:hover,.sound i:hover {
+  font-weight: bold;
+  color: rgba(255,255,0,0.85);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(255,105,180,0.9);
+}
+
+/*****************   top page   ******************/
+div.topPageImg {
+  overflow: hidden;
+  background-image: url(img/topPageBackgraund.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  position: relative;
+}
+
+.topPage h1 {
+  font-family: 'Racing Sans One', cursive;
+  font-size: 100px;
+  text-align: center;
+  margin: 50px 0px;
+  color: #fffafa;
+}
+
+      /******   top page button   *************/
+.topPage button {
+  margin: 291px 0px 50px 354.4px;
+}
+
+      /******   top page small   *************/
+.topPage small {
+  font-family: 'Kelly Slab', cursive;
+  font-size: 20px;
+  display: block;
+  width: 400px;
+  text-align: center;
+  margin: 0px 10px 30px 590px;
+  color: #fffafa;
+}
+
+/*****************   discription page   ******************/
+div.discriptionPageImg {
+  /*display: none;*/
+  overflow: hidden;
+}
+
+.discriptionPageImg h2 {
+  font-family: 'Racing Sans One', cursive;
+  font-size: 70px;
+  text-align: center;
+  margin: 20px 0px;
+  color: #fffafa;
+}
+
+.descriptionPage {
+  position: relative;
+}
+
+.descriptionPage img:nth-last-of-type(1) {
+  position: absolute;
+  top: 400px;
+  left: 250px
+}
+
+.descriptionPage img:nth-last-of-type(2) {
+  position: absolute;
+  top: 50px;
+  left: 450px;
+}
+      /******   discription speechBalloon   *****************/
+.descriptionPage .speechBalloon:nth-of-type(1) {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+}
+
+.descriptionPage .speechBalloon:nth-of-type(2) {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+}
+
+.speechBalloonComment_minus,.speechBalloonComment_plus {
+  font-family: 'Kelly Slab', cursive;
+  font-size: 30px;
+  background-color: #fffafa;
+  color: rgba(135,206,250,1);
+  border: solid 4px #87cefa;
+  padding: 15px;
+  text-align: center;
+  border-radius: 30px;
+  position: relative;
+  width: 300px;
+}
+
+.speechBalloonComment_minus::before {
+  content: "";
+  position: absolute;
+  top: 139px;
+  right: 55px;
+  border: solid 30px transparent;
+  border-top: solid 150px #87cefa;
+}
+
+.speechBalloonComment_minus::after {
+  content: "";
+  position: absolute;
+  top: 120px;
+  right: 55px;
+  border: solid 30px transparent;
+  border-top: solid 150px #fffafa;
+}
+
+.speechBalloonComment_plus::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: -110px;
+  border: solid 30px transparent;
+  border-right: solid 80px #87cefa;
+}
+
+.speechBalloonComment_plus::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: -100px;
+  border: solid 30px transparent;
+  border-right: solid 80px #fffafa;
+}
+
+.speechBalloonComment_minus p,.speechBalloonComment_plus p {
+  margin: 0px;
+}
+
+      /*********   discription button   ***************/
+.descriptionPage button {
+  margin: 388px 0px 100px 350px;
+}
+
+/*****************   count down page   ******************/
+      /************   count down image   **************/
+div.countDown3Img {
+  overflow: hidden;
+  background-image: url(img/countDown3.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  position: relative;
+}
+
+div.countDown2Img {
+  overflow: hidden;
+  background-image: url(img/countDown2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  position: relative;
+}
+
+div.countDown1Img {
+  overflow: hidden;
+  background-image: url(img/countDown1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  position: relative;
+}
+
+div.countDownStartImg {
+  overflow: hidden;
+  background-image: url(img/countDownStart.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  position: relative;
+}
+
+      /*********   cont down number & fonts   *************/
+.countDownImgLayer h2 {
+  font-family: 'Racing Sans One', cursive;
+  font-size: 200px;
+  text-align: center;
+  color: rgba(135,206,250,0.9);
+  margin: 0px;
+  width: 252px;
+  border-radius: 126px;
+  border: solid 6px rgba(135,206,250,1);
+  background-color: rgba(255,250,250,0.9);
+}
+
+.countDown3Img h2 {
+  position: absolute;
+  top: 400px;
+  left: 450px;
+}
+
+.countDown2Img h2 {
+  position: absolute;
+  top: 300px;
+  left: 374px;
+}
+
+.countDown1Img h2 {
+  position: absolute;
+  top: 320px;
+  left: 580px;
+}
+
+.countDownStartImg h2 {
+  position: absolute;
+  top: 420px;
+  left: 200px;
+  width: 600px;
+  border: solid 6px rgba(135,206,250,0.9);
+  background-color: rgba(255,250,250,0.9);
+  color: rgba(135,206,250,0.9)
+}
+
+
+/************   game page   *********************/
+div.target input {
+  display: none;
+}
+
+img.ball {
+  width: 50px;
+}
+
+img.fireWorks {
+  display: none;
+}
+
+div.gameView {
+  position: relative;
+}
+
+.target {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.target label {
+  position: relative;
+}
+
+.target img {
+  overflow: hidden;
+}
+
+.target .explosion {
+  position: absolute;
+  left: -65px;
+}
+
+    /*********   fireworks pink position   ***************/
+.pink .half {
+  position: absolute;
+  left: -43px;
+}
+
+.pink .all {
+  position: absolute;
+  left: -93.5px;
+}
+
+    /*********   fireworks blue position   ************/
+.blue .half {
+  position: absolute;
+  left: -10px;
+}
+
+.blue .all {
+  position: absolute;
+  left: -50px;
+}
+
+    /*********   fireworks skyblue position   ************/
+.skyblue .half {
+  position: absolute;
+  left: -12px;
+}
+
+.skyblue .all {
+  position: absolute;
+  left: -50px;
+}
+
+    /*********   fireworks skyblue position   ************/
+.skyblue .half {
+  position: absolute;
+  left: -12px;
+}
+
+.skyblue .all {
+  position: absolute;
+  left: -50px;
+}
+
+    /*********   fireworks navy position   ************/
+.navy .half {
+  position: absolute;
+  left: -12px;
+}
+
+.navy .all {
+  position: absolute;
+  left: -50px;
+}
+
+    /*********   fireworks navy position   ************/
+.yellow .half {
+  position: absolute;
+  left: -12px;
+}
+
+.yellow .all {
+  position: absolute;
+  left: -50px;
+}
+
+/**********   score   ********************************/
+div.score {
+  display: none;
+}
+
+      /**********   score speech balloon   ***************/
+.score {
+  position: relative;
+}
+
+.score .speechBalloonComment p {
+  font-family: 'Kelly Slab', cursive;
+  font-size: 50px;
+  text-align: center;
+  margin: 3px 0px;
+  color: #87cefa;
+}
+
+.score .speechBalloonComment p:nth-of-type(2) {
+  font-size: 65px;
+  font-weight: bold;
+}
+
+.scoreImgLayer .speechBalloonComment {
+  width: 300px;
+  border-radius: 50px;
+  border: solid 5px #87cefa;
+  background-color: rgba(255,250,250,0.9);
+  padding: 30px;
+  position: relative;
+}
+
+      /********   good speech balloon   ****************/
+.scoreImgGood .speechBalloon {
+  position: absolute;
+  top: 200px;
+  right: 50px;
+}
+
+.scoreImgGood .speechBalloonComment::before {
+  content: "";
+  position: absolute;
+  bottom: 70px;
+  left: -160px;
+  border: solid 30px transparent;
+  border-right: solid 130px rgba(135,206,250,0.9);
+}
+
+.scoreImgGood .speechBalloonComment::after {
+  content: "";
+  position: absolute;
+  bottom: 70px;
+  left: -140px;
+  border: solid 30px transparent;
+  border-right: solid 130px rgba(255,250,250,0.9);
+}
+
+      /*********   acceptable speech balloon   ****************/
+.scoreImgAcceptable .speechBalloon {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.scoreImgAcceptable .speechBalloonComment::before {
+  content: "";
+  position: absolute;
+  top: 190px;
+  right: -200px;
+  border: solid 30px transparent;
+  border-left: solid 170px rgba(135,206,250,0.9);
+}
+
+.scoreImgAcceptable .speechBalloonComment::after {
+  content: "";
+  position: absolute;
+  top: 190px;
+  right: -180px;
+  border: solid 30px transparent;
+  border-left: solid 170px rgba(255,250,250,0.9);
+}
+
+      /********   poor speech balloon   ****************/
+.scoreImgPoor .speechBalloon {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+
+.scoreImgPoor .speechBalloonComment::before {
+  content: "";
+  position: absolute;
+  bottom: 80px;
+  left: -100px;
+  border: solid 30px transparent;
+  border-right: solid 70px rgba(135,206,250,0.9);
+}
+
+.scoreImgPoor .speechBalloonComment::after {
+  content: "";
+  position: absolute;
+  bottom: 80px;
+  left: -90px;
+  border: solid 30px transparent;
+  border-right: solid 70px rgba(255,250,250,0.9);
+}
+
+    /*************   good   *****************/
+div.scoreImgGood {
+  overflow: hidden;
+  background-image: url(img/scoreGood.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+    /*************   acceptable   *****************/
+div.scoreImgAcceptable {
+  overflow: hidden;
+  background-image: url(img/scoreAcceptable.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+    /*************   poor   *****************/
+div.scoreImgPoor {
+  overflow: hidden;
+  background-image: url(img/scorePoor.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+    /*******   score button good  ***************/
+.scoreImgGood button {
+  margin: 567.1px 0px 0px 163.5px;
+}
+
+    /*******   score button acceptable  ***************/
+.scoreImgAcceptable button {
+  margin: 567.1px 0px 0px 583.5px;
+}
+
+    /*******   score button poor  ***************/
+.scoreImgPoor button {
+  margin: 567.1px 0px 0px 373.5px;
+}
+
+/***********   sound button   *************/
+div.sound {
+  overflow: hidden;
+  position: absolute;
+  top: 800px;
+  left: 100px;
+}
+
+.sound i {
+  font-size: 30px;
+  padding: 15px 0px;
+  width: 50px;
+  text-align: center;
+}
+
+.sound button {
+  margin-left: 10px;
+}
+
+
+
+/******* goole fonts   *******************/
+/*
+font-family: 'Dancing Script', cursive;
+font-family: 'Rokkitt', serif;
+font-family: 'Lobster Two', cursive;
+font-family: 'Courgette', cursive;
+font-family: 'Yellowtail', cursive;
+font-family: 'Racing Sans One', cursive;
+font-family: 'Kelly Slab', cursive;
+*/
+
+
+
+

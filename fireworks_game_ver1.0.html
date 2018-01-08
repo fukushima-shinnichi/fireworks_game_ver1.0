@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>fireworks game vestion1.0</title>
+<meta name="description" content="fireworks game vestion1.0 using HTML,CSS,jQuery. this game is click fireworks ball when point up. this game start when ring sounds.">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+<link href="https://fonts.googleapis.com/css?family=Courgette|Dancing+Script|Kelly+Slab|Lobster+Two|Racing+Sans+One|Rokkitt|Yellowtail" rel="stylesheet">
+<link rel="stylesheet" href="css/fireworks_game_ver1.0/fireworks_game_ver1.0.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+  <!--top image -- night sky or fireworks-->
+<body>
+  <!--  brightness adjustment of top imge -- white -->
+  <div class="topImgLayer Layer">
+    <!--   game view 1000 x 700     ----------------->
+    <div class="siteView">
+      <!----------------  top page    ----------------->
+      <div class="topPageImg backgraundImg">
+        <div class="topPageImgLayer Layer">
+          <div class="topPage">
+            <h1>fireworks game</h1>
+            <button><p>description</p></button>
+            <small>verstion1.0 since 2017/09/24~</small>
+          </div>
+        </div>
+      </div>
+      <!-------------  discription page  ---------------->
+      <div class="discriptionPageImg backgraundImg">
+        <div class="discriptionPageImgLayer Layer">
+          <div>
+            <h2>description</h2>
+            <div class="descriptionPage">
+              <img src="img/fireworks_game_ver1.0/discription.JPG">
+              <img src="img/fireworks_game_ver1.0/discription.JPG">
+              <div class="speechBalloon">
+                <div class="speechBalloonComment_minus">
+                  <p>click ball.</p>
+                  <p>When low altitude click,minus points.</p>
+                </div>
+              </div>
+              <div class="speechBalloon">
+                <div class="speechBalloonComment_plus">
+                  <p>click ball.</p>
+                  <p>When over the sky click,plus 2points.</p>
+                  <p>When middle click,plus 1points.</p>
+                </div>
+              </div>
+              <button><p>count down</p></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-------  count down page    ----------------->
+      <div class="countDown3Img backgraundImg">
+        <div class="countDownImgLayer Layer">
+          <h2>3</h2>
+        </div>
+      </div>
+      <div class="countDown2Img backgraundImg">
+        <div class="countDownImgLayer Layer">
+          <h2>2</h2>
+        </div>
+      </div>
+      <div class="countDown1Img backgraundImg">
+        <div class="countDownImgLayer Layer">
+          <h2>1</h2>
+        </div>
+      </div>
+      <div class="countDownStartImg backgraundImg">
+        <div class="countDownImgLayer Layer">
+          <h2>start</h2>
+        </div>
+      </div>
+      <!--------   game page     --------------------->
+      <div class="gameView">
+        
+        <!-------------   fireworks pink zone   ------------------>
+        <div class="target pink">
+          <label>
+            <input type="radio" name="target1" value="0" checked="checked">
+            <img class="ball" src="img/fireworks_game_ver1.0/fireworks/tama.png">
+            <img class="explosion fireWorks" src="img/fireworks_game_ver1.0/fireworksPoor.png">
+            <img class="halfhalf fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_pink_small.png">
+            <img class="half fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_pink_middle.png">
+            <img class="all fireWorks"  src="img/fireworks_game_ver1.0/fireworks/fireworks_pink_big.png">
+          </label>
+          <div class="smoke">
+            <img src="img/fireworks_game_ver1.0/fireworks/smork.png">
+          </div>
+        </div>
+        <div class="target pink">
+          <label>
+            <input type="radio" name="target2" value="0" checked="checked">
+            <img class="ball" src="img/fireworks_game_ver1.0/fireworks/tama.png">
+            <img class="explosion fireWorks" src="img/fireworks_game_ver1.0/fireworksPoor.png">
+            <img class="halfhalf fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_pink_small.png">
+            <img class="half fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_pink_middle.png">
+            <img class="all fireWorks"  src="img/fireworks_game_ver1.0/fireworks/fireworks_pink_big.png">
+          </label>
+          <div class="smoke">
+            <img src="img/fireworks_game_ver1.0/fireworks/smork.png">
+          </div>
+        </div>
+        <div class="target pink">
+          <label>
+            <input type="radio" name="target3" value="0" checked="checked">
+            <img class="ball" src="img/fireworks_game_ver1.0/fireworks/tama.png">
+            <img class="explosion fireWorks" src="img/fireworks_game_ver1.0/fireworksPoor.png">
+            <img class="halfhalf fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_pink_small.png">
+            <img class="half fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_pink_middle.png">
+            <img class="all fireWorks"  src="img/fireworks_game_ver1.0/fireworks/fireworks_pink_big.png">
+          </label>
+          <div class="smoke">
+            <img src="img/fireworks_game_ver1.0/fireworks/smork.png">
+          </div>
+        </div>
+        <div class="target pink">
+          <label>
+            <input type="radio" name="target4" value="0" checked="checked">
+            <img class="ball" src="img/fireworks_game_ver1.0/fireworks/tama.png">
+            <img class="explosion fireWorks" src="img/fireworks_game_ver1.0/fireworksPoor.png">
+            <img class="halfhalf fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_pink_small.png">
+            <img class="half fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_pink_middle.png">
+            <img class="all fireWorks"  src="img/fireworks_game_ver1.0/fireworks/fireworks_pink_big.png">
+          </label>
+          <div class="smoke">
+            <img src="img/fireworks_game_ver1.0/fireworks/smork.png">
+          </div>
+        </div>
+        <div class="target pink">
+          <label>
+            <input type="radio" name="target5" value="0" checked="checked">
+            <img class="ball" src="img/fireworks_game_ver1.0/fireworks/tama.png">
+            <img class="explosion fireWorks" src="img/fireworks_game_ver1.0/fireworksPoor.png">
+            <img class="halfhalf fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_pink_small.png">
+            <img class="half fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_pink_middle.png">
+            <img class="all fireWorks"  src="img/fireworks_game_ver1.0/fireworks/fireworks_pink_big.png">
+          </label>
+          <div class="smoke">
+            <img src="img/fireworks_game_ver1.0/fireworks/smork.png">
+          </div>
+        </div>
+        
+        <!-----------------   fireworks bule zone   ------------------>
+        <div class="target blue">
+          <label>
+            <input type="radio" name="target6" value="0" checked="checked">
+            <img class="ball" src="img/fireworks_game_ver1.0/fireworks/tama.png">
+            <img class="explosion fireWorks" src="img/fireworks_game_ver1.0/fireworksPoor.png">
+            <img class="halfhalf fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_blue/fireworks_blue_small.png">
+            <img class="half fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_blue/fireworks_blue_middle.png">
+            <img class="all fireWorks"  src="img/fireworks_game_ver1.0/fireworks/fireworks_blue/fireworks_blue_big.png">
+          </label>
+          <div class="smoke">
+            <img src="img/fireworks_game_ver1.0/fireworks/smork.png">
+          </div>
+        </div>
+        <div class="target blue">
+          <label>
+            <input type="radio" name="target7" value="0" checked="checked">
+            <img class="ball" src="img/fireworks_game_ver1.0/fireworks/tama.png">
+            <img class="explosion fireWorks" src="img/fireworks_game_ver1.0/fireworksPoor.png">
+            <img class="halfhalf fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_blue/fireworks_blue_small.png">
+            <img class="half fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_blue/fireworks_blue_middle.png">
+            <img class="all fireWorks"  src="img/fireworks_game_ver1.0/fireworks/fireworks_blue/fireworks_blue_big.png">
+          </label>
+          <div class="smoke">
+            <img src="img/fireworks_game_ver1.0/fireworks/smork.png">
+          </div>
+        </div>
+        <div class="target blue">
+          <label>
+            <input type="radio" name="target8" value="0" checked="checked">
+            <img class="ball" src="img/fireworks_game_ver1.0/fireworks/tama.png">
+            <img class="explosion fireWorks" src="img/fireworks_game_ver1.0/fireworksPoor.png">
+            <img class="halfhalf fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_blue/fireworks_blue_small.png">
+            <img class="half fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_blue/fireworks_blue_middle.png">
+            <img class="all fireWorks"  src="img/fireworks_game_ver1.0/fireworks/fireworks_blue/fireworks_blue_big.png">
+          </label>
+          <div class="smoke">
+            <img src="img/fireworks_game_ver1.0/fireworks/smork.png">
+          </div>
+        </div>
+        <div class="target blue">
+          <label>
+            <input type="radio" name="target9" value="0" checked="checked">
+            <img class="ball" src="img/fireworks_game_ver1.0/fireworks/tama.png">
+            <img class="explosion fireWorks" src="img/fireworks_game_ver1.0/fireworksPoor.png">
+            <img class="halfhalf fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_blue/fireworks_blue_small.png">
+            <img class="half fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_blue/fireworks_blue_middle.png">
+            <img class="all fireWorks"  src="img/fireworks_game_ver1.0/fireworks/fireworks_blue/fireworks_blue_big.png">
+          </label>
+          <div class="smoke">
+            <img src="img/fireworks_game_ver1.0/fireworks/smork.png">
+          </div>
+        </div>
+        <div class="target blue">
+          <label>
+            <input type="radio" name="target10" value="0" checked="checked">
+            <img class="ball" src="img/fireworks_game_ver1.0/fireworks/tama.png">
+            <img class="explosion fireWorks" src="img/fireworks_game_ver1.0/fireworksPoor.png">
+            <img class="halfhalf fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_blue/fireworks_blue_small.png">
+            <img class="half fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_blue/fireworks_blue_middle.png">
+            <img class="all fireWorks"  src="img/fireworks_game_ver1.0/fireworks/fireworks_blue/fireworks_blue_big.png">
+          </label>
+          <div class="smoke">
+            <img src="img/fireworks_game_ver1.0/fireworks/smork.png">
+          </div>
+        </div>
+        
+        <!------------   fireworks skybule zone   ---------->
+        <div class="target skyblue">
+          <label>
+            <input type="radio" name="target11" value="0" checked="checked">
+            <img class="ball" src="img/fireworks_game_ver1.0/fireworks/tama.png">
+            <img class="explosion fireWorks" src="img/fireworks_game_ver1.0/fireworksPoor.png">
+            <img class="halfhalf fireWorks" src="img/fireworks_game_ver1.0/fireworks/firworks_skyblue/fireworks_skyblue_small.png">
+            <img class="half fireWorks" src="img/fireworks_game_ver1.0/fireworks/firworks_skyblue/fireworks_skyblue_middle.png">
+            <img class="all fireWorks"  src="img/fireworks_game_ver1.0/fireworks/firworks_skyblue/fireworks_skyblue_big.png">
+          </label>
+          <div class="smoke">
+            <img src="img/fireworks_game_ver1.0/fireworks/smork.png">
+          </div>
+        </div>
+        <div class="target skyblue">
+          <label>
+            <input type="radio" name="target12" value="0" checked="checked">
+            <img class="ball" src="img/fireworks_game_ver1.0/fireworks/tama.png">
+            <img class="explosion fireWorks" src="img/fireworks_game_ver1.0/fireworksPoor.png">
+            <img class="halfhalf fireWorks" src="img/fireworks_game_ver1.0/fireworks/firworks_skyblue/fireworks_skyblue_small.png">
+            <img class="half fireWorks" src="img/fireworks_game_ver1.0/fireworks/firworks_skyblue/fireworks_skyblue_middle.png">
+            <img class="all fireWorks"  src="img/fireworks_game_ver1.0/fireworks/firworks_skyblue/fireworks_skyblue_big.png">
+          </label>
+          <div class="smoke">
+            <img src="img/fireworks_game_ver1.0/fireworks/smork.png">
+          </div>
+        </div>
+        <div class="target skyblue">
+          <label>
+            <input type="radio" name="target13" value="0" checked="checked">
+            <img class="ball" src="img/fireworks_game_ver1.0/fireworks/tama.png">
+            <img class="explosion fireWorks" src="img/fireworks_game_ver1.0/fireworksPoor.png">
+            <img class="halfhalf fireWorks" src="img/fireworks_game_ver1.0/fireworks/firworks_skyblue/fireworks_skyblue_small.png">
+            <img class="half fireWorks" src="img/fireworks_game_ver1.0/fireworks/firworks_skyblue/fireworks_skyblue_middle.png">
+            <img class="all fireWorks"  src="img/fireworks_game_ver1.0/fireworks/firworks_skyblue/fireworks_skyblue_big.png">
+          </label>
+          <div class="smoke">
+            <img src="img/fireworks_game_ver1.0/fireworks/smork.png">
+          </div>
+        </div>
+        <div class="target skyblue">
+          <label>
+            <input type="radio" name="target14" value="0" checked="checked">
+            <img class="ball" src="img/fireworks_game_ver1.0/fireworks/tama.png">
+            <img class="explosion fireWorks" src="img/fireworks_game_ver1.0/fireworksPoor.png">
+            <img class="halfhalf fireWorks" src="img/fireworks_game_ver1.0/fireworks/firworks_skyblue/fireworks_skyblue_small.png">
+            <img class="half fireWorks" src="img/fireworks_game_ver1.0/fireworks/firworks_skyblue/fireworks_skyblue_middle.png">
+            <img class="all fireWorks"  src="img/fireworks_game_ver1.0/fireworks/firworks_skyblue/fireworks_skyblue_big.png">
+          </label>
+          <div class="smoke">
+            <img src="img/fireworks_game_ver1.0/fireworks/smork.png">
+          </div>
+        </div>
+        <div class="target skyblue">
+          <label>
+            <input type="radio" name="target15" value="0" checked="checked">
+            <img class="ball" src="img/fireworks_game_ver1.0/fireworks/tama.png">
+            <img class="explosion fireWorks" src="img/fireworks_game_ver1.0/fireworksPoor.png">
+            <img class="halfhalf fireWorks" src="img/fireworks_game_ver1.0/fireworks/firworks_skyblue/fireworks_skyblue_small.png">
+            <img class="half fireWorks" src="img/fireworks_game_ver1.0/fireworks/firworks_skyblue/fireworks_skyblue_middle.png">
+            <img class="all fireWorks"  src="img/fireworks_game_ver1.0/fireworks/firworks_skyblue/fireworks_skyblue_big.png">
+          </label>
+          <div class="smoke">
+            <img src="img/fireworks_game_ver1.0/fireworks/smork.png">
+          </div>
+        </div>
+        
+        <!------------   fireworks navy zone   ---------->
+        <div class="target navy">
+          <label>
+            <input type="radio" name="target16" value="0" checked="checked">
+            <img class="ball" src="img/fireworks_game_ver1.0/fireworks/tama.png">
+            <img class="explosion fireWorks" src="img/fireworks_game_ver1.0/fireworksPoor.png">
+            <img class="halfhalf fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_navy/fireworks_navy_small.png">
+            <img class="half fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_navy/fireworks_navy_middle.png">
+            <img class="all fireWorks"  src="img/fireworks_game_ver1.0/fireworks/fireworks_navy/fireworks_navy_big.png">
+          </label>
+          <div class="smoke">
+            <img src="img/fireworks_game_ver1.0/fireworks/smork.png">
+          </div>
+        </div>
+        <div class="target navy">
+          <label>
+            <input type="radio" name="target17" value="0" checked="checked">
+            <img class="ball" src="img/fireworks_game_ver1.0/fireworks/tama.png">
+            <img class="explosion fireWorks" src="img/fireworks_game_ver1.0/fireworksPoor.png">
+            <img class="halfhalf fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_navy/fireworks_navy_small.png">
+            <img class="half fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_navy/fireworks_navy_middle.png">
+            <img class="all fireWorks"  src="img/fireworks_game_ver1.0/fireworks/fireworks_navy/fireworks_navy_big.png">
+          </label>
+          <div class="smoke">
+            <img src="img/fireworks_game_ver1.0/fireworks/smork.png">
+          </div>
+        </div>
+        <div class="target navy">
+          <label>
+            <input type="radio" name="target18" value="0" checked="checked">
+            <img class="ball" src="img/fireworks_game_ver1.0/fireworks/tama.png">
+            <img class="explosion fireWorks" src="img/fireworks_game_ver1.0/fireworksPoor.png">
+            <img class="halfhalf fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_navy/fireworks_navy_small.png">
+            <img class="half fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_navy/fireworks_navy_middle.png">
+            <img class="all fireWorks"  src="img/fireworks_game_ver1.0/fireworks/fireworks_navy/fireworks_navy_big.png">
+          </label>
+          <div class="smoke">
+            <img src="img/fireworks_game_ver1.0/fireworks/smork.png">
+          </div>
+        </div>
+        <div class="target navy">
+          <label>
+            <input type="radio" name="target19" value="0" checked="checked">
+            <img class="ball" src="img/fireworks_game_ver1.0/fireworks/tama.png">
+            <img class="explosion fireWorks" src="img/fireworks_game_ver1.0/fireworksPoor.png">
+            <img class="halfhalf fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_navy/fireworks_navy_small.png">
+            <img class="half fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_navy/fireworks_navy_middle.png">
+            <img class="all fireWorks"  src="img/fireworks_game_ver1.0/fireworks/fireworks_navy/fireworks_navy_big.png">
+          </label>
+          <div class="smoke">
+            <img src="img/fireworks_game_ver1.0/fireworks/smork.png">
+          </div>
+        </div>
+        <div class="target navy">
+          <label>
+            <input type="radio" name="target20" value="0" checked="checked">
+            <img class="ball" src="img/fireworks_game_ver1.0/fireworks/tama.png">
+            <img class="explosion fireWorks" src="img/fireworks_game_ver1.0/fireworksPoor.png">
+            <img class="halfhalf fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_navy/fireworks_navy_small.png">
+            <img class="half fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_navy/fireworks_navy_middle.png">
+            <img class="all fireWorks"  src="img/fireworks_game_ver1.0/fireworks/fireworks_navy/fireworks_navy_big.png">
+          </label>
+          <div class="smoke">
+            <img src="img/fireworks_game_ver1.0/fireworks/smork.png">
+          </div>
+        </div>
+        
+        <!------------   fireworks yellow zone   ---------->
+        <div class="target yellow">
+          <label>
+            <input type="radio" name="target21" value="0" checked="checked">
+            <img class="ball" src="img/fireworks_game_ver1.0/fireworks/tama.png">
+            <img class="explosion fireWorks" src="img/fireworks_game_ver1.0/fireworksPoor.png">
+            <img class="halfhalf fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_yellow/fireworks_yellow_small.png">
+            <img class="half fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_yellow/fireworks_yellow_middle.png">
+            <img class="all fireWorks"  src="img/fireworks_game_ver1.0/fireworks/fireworks_yellow/fireworks_yellow_big.png">
+          </label>
+          <div class="smoke">
+            <img src="img/fireworks_game_ver1.0/fireworks/smork.png">
+          </div>
+        </div>
+        <div class="target yellow">
+          <label>
+            <input type="radio" name="target22" value="0" checked="checked">
+            <img class="ball" src="img/fireworks_game_ver1.0/fireworks/tama.png">
+            <img class="explosion fireWorks" src="img/fireworks_game_ver1.0/fireworksPoor.png">
+            <img class="halfhalf fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_yellow/fireworks_yellow_small.png">
+            <img class="half fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_yellow/fireworks_yellow_middle.png">
+            <img class="all fireWorks"  src="img/fireworks_game_ver1.0/fireworks/fireworks_yellow/fireworks_yellow_big.png">
+          </label>
+          <div class="smoke">
+            <img src="img/fireworks_game_ver1.0/fireworks/smork.png">
+          </div>
+        </div>
+        <div class="target yellow">
+          <label>
+            <input type="radio" name="target23" value="0" checked="checked">
+            <img class="ball" src="img/fireworks_game_ver1.0/fireworks/tama.png">
+            <img class="explosion fireWorks" src="img/fireworks_game_ver1.0/fireworksPoor.png">
+            <img class="halfhalf fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_yellow/fireworks_yellow_small.png">
+            <img class="half fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_yellow/fireworks_yellow_middle.png">
+            <img class="all fireWorks"  src="img/fireworks_game_ver1.0/fireworks/fireworks_yellow/fireworks_yellow_big.png">
+          </label>
+          <div class="smoke">
+            <img src="img/fireworks_game_ver1.0/fireworks/smork.png">
+          </div>
+        </div>
+        <div class="target yellow">
+          <label>
+            <input type="radio" name="target24" value="0" checked="checked">
+            <img class="ball" src="img/fireworks_game_ver1.0/fireworks/tama.png">
+            <img class="explosion fireWorks" src="img/fireworks_game_ver1.0/fireworksPoor.png">
+            <img class="halfhalf fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_yellow/fireworks_yellow_small.png">
+            <img class="half fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_yellow/fireworks_yellow_middle.png">
+            <img class="all fireWorks"  src="img/fireworks_game_ver1.0/fireworks/fireworks_yellow/fireworks_yellow_big.png">
+          </label>
+          <div class="smoke">
+            <img src="img/fireworks_game_ver1.0/fireworks/smork.png">
+          </div>
+        </div>
+        <div class="target yellow">
+          <label>
+            <input type="radio" name="target25" value="0" checked="checked">
+            <img class="ball" src="img/fireworks_game_ver1.0/fireworks/tama.png">
+            <img class="explosion fireWorks" src="img/fireworks_game_ver1.0/fireworksPoor.png">
+            <img class="halfhalf fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_yellow/fireworks_yellow_small.png">
+            <img class="half fireWorks" src="img/fireworks_game_ver1.0/fireworks/fireworks_yellow/fireworks_yellow_middle.png">
+            <img class="all fireWorks"  src="img/fireworks_game_ver1.0/fireworks/fireworks_yellow/fireworks_yellow_big.png">
+          </label>
+          <div class="smoke">
+            <img src="img/fireworks_game_ver1.0/fireworks/smork.png">
+          </div>
+        </div>
+        
+      </div>
+      <!--------   score   --------------------->
+      <div class="scoreImgGood score backgraundImg">
+        <div class="scoreImgLayer Layer">
+          <div class="speechBalloon">
+            <div class="speechBalloonComment">
+              <p>score</p>
+              <p>OOOpoints</p>
+              <p>Good</p>
+              <p>What do you play at next?</p>
+            </div>
+          </div>
+          <button><p>try again</p></button>
+        </div>
+      </div>
+      
+      <div class="scoreImgAcceptable score backgraundImg">
+        <div class="scoreImgLayer Layer">
+          <div class="speechBalloon">
+            <div class="speechBalloonComment">
+              <p>score</p>
+              <p>OOOpoints</p>
+              <p>Acceptable</p>
+              <p>I feel so happy.</p>
+              <p>I want to go festival to again.</p>
+            </div>
+          </div>
+          <button><p>try again</p></button>
+        </div>
+      </div>
+      
+      <div class="scoreImgPoor score backgraundImg">
+        <div class="scoreImgLayer Layer">
+          <div class="speechBalloon">
+            <div class="speechBalloonComment">
+              <p>score</p>
+              <p>OOOpoints</p>
+              <p>Poor</p>
+              <p>Do your best...</p>
+            </div>
+          </div>
+          <button><p>try again</p></button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <audio id="songs1" preload="auto">
+    <source src="audio/fireworks_game_ver1.0/RAIN_NASUO_channel_cover.mp3">
+  </audio>
+    <audio id="songs2" preload="auto">
+    <source src="audio/fireworks_game_ver1.0/UTIAGEHANABI_NASUO_channel_cover.mp3">
+  </audio>
+  <audio id="songs3" preload="auto">
+    <source src="audio/fireworks_game_ver1.0/NATUMATURI_MacroStereo_cover.mp3">
+  </audio>
+  <div class="sound">
+    <button id="up"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+    <button id="down"><i class="fa fa-volume-down" aria-hidden="true"></i></button>
+    <button id="mute"><i class="fa fa-microphone-slash" aria-hidden="true"></i></button>
+  </div>
+  
+
+<!---------   jQuery    ----------------------->
+<script src="jQuery_base/jquery-3.2.1.min.js"></script>
+<script src="jQuery_base/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script src="js/fireworks_game_ver1.0/fireworks_game_ver1.0.js"></script>
+</body>
+</html>
