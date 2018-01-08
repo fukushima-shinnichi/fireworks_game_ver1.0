@@ -38,7 +38,7 @@ HTMLに音楽を埋込み、javascriptを利用し、音量調節、自動再生
 ***
 ***
 
-# Website of pakupaku game version1.0
+# Website of fireworks game version1.0
 ## Overview
 * this this website concept is easy 2D game.
 * use HTML5,CSS3,jQuery.
