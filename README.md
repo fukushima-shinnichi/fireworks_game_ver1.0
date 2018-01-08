@@ -17,6 +17,7 @@ HTMLに音楽を埋込み、javascriptを利用し、音量調節、自動再生
 ```
 ファイルの構成/
 ├─ README.md
+├─ audio                                                     # 音楽保存フォルダー
 ├─ jQuery_base                                               # jQuery保存フォルダー
 ├─ fonts                                                     # webフォント(Font Awesome)保存フォルダー
 ├─ img                                                       # 画像保存フォルダー
@@ -54,7 +55,8 @@ Let's start this game!!
 ```
 Component file/
 ├─ README.md
-├─ jQuery_base                                               # folder of jQuery files.
+├─ audio                                                     # folder of music files.
+├─ jQuery_base                                               # folder of jQuery files.
 ├─ fonts                                                     # folder of web fonts.(saving in this folder at Font Awesome.)
 ├─ img                                                       # folder of images. 
 ├─ fireworks_game_ver1.0.html                                # Top page.（my coding）
