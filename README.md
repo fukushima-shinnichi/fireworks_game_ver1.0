@@ -20,20 +20,20 @@ HTMLに音楽を埋込み、javascriptを利用し、音量調節、自動再生
 ├─ jQuery_base                                               # jQuery保存フォルダー
 ├─ fonts                                                     # webフォント(Font Awesome)保存フォルダー
 ├─ img                                                       # 画像保存フォルダー
-├─ pakupaku_game.html                                        # トップページ（自身でコーディング）
+├─ fireworks_game_ver1.0.html                                # トップページ（自身でコーディング）
 ├─ css/
-|    └─ pakupaku_game                                        # CSS保存フォルダー(Font Awesomeのcss保存)
+|    └─ fireworks_game_ver1.0                                # CSS保存フォルダー(Font Awesomeのcss保存)
 |           ├─ img                                           # 画像保存フォルダー（cssに埋込む用）
-|           └─ pakupaku_game.css                             # CSSファイル（自身でコーディング）
+|           └─ fireworks_game_ver1.0.css                     # CSSファイル（自身でコーディング）
 └─ js/
     └─ pakupaku_game                                         # jsファイル保存フォルダー
-           └─ pakupaku_game.js                               # jsファイル（自身でコーディング）   
+           └─ fireworks_game_ver1.0.js                       # jsファイル（自身でコーディング）   
 ```
 ## インストール方法
 1、全てのファイルをフォークし、ローカルにクローンを作成。  
 2、ローカルに保存したHTMLファイルをウェブブラウザで開く。  
 ## デモサイトURL（ポートフォリオURL）
-[http://s-fukushima.sakura.ne.jp/pakupaku_game.html](http://s-fukushima.sakura.ne.jp/pakupaku_game.html "ポートフォリオURL")
+[http://s-fukushima.sakura.ne.jp/fireworks_game_ver1.0.html](http://s-fukushima.sakura.ne.jp/fireworks_game_ver1.0.html "ポートフォリオURL")
 
 ***
 ***
@@ -42,10 +42,10 @@ HTMLに音楽を埋込み、javascriptを利用し、音量調節、自動再生
 ## Overview
 * this this website concept is easy 2D game.
 * use HTML5,CSS3,jQuery.
-* correspondence of responsive design.
+* not correspondence of responsive design.
 * my web design skill is this web site.
 ## Description
-if you click foods, points up.  
+if you click target, points up.  
 result page change according to your get points.  
 this skill is javascript of if sentence and HTML input tage.  
 Let's start this game!!
