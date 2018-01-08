@@ -26,7 +26,7 @@ HTMLに音楽を埋込み、javascriptを利用し、音量調節、自動再生
 |           ├─ img                                           # 画像保存フォルダー（cssに埋込む用）
 |           └─ fireworks_game_ver1.0.css                     # CSSファイル（自身でコーディング）
 └─ js/
-    └─ pakupaku_game                                         # jsファイル保存フォルダー
+    └─ fireworks_game_ver1.0                                 # jsファイル保存フォルダー
            └─ fireworks_game_ver1.0.js                       # jsファイル（自身でコーディング）   
 ```
 ## インストール方法
@@ -47,7 +47,8 @@ HTMLに音楽を埋込み、javascriptを利用し、音量調節、自動再生
 ## Description
 if you click target, points up.  
 result page change according to your get points.  
-this skill is javascript of if sentence and HTML input tage.  
+use Math.random() of javascript function to can target position be random.  
+use .data() of javascript function to can change points at target click position.  
 Let's start this game!!
 ## Component file
 ```
@@ -56,17 +57,17 @@ Component file/
 ├─ jQuery_base                                               # folder of jQuery files.
 ├─ fonts                                                     # folder of web fonts.(saving in this folder at Font Awesome.)
 ├─ img                                                       # folder of images. 
-├─ pakupaku_game.html                                        # Top page.（my coding）
+├─ fireworks_game_ver1.0.html                                # Top page.（my coding）
 ├─ css/
-|   └─ pakupaku_game                                         # folder of css(saving in this folder at css of Font Awesome.)
+|   └─ fireworks_game_ver1.0                                 # folder of css(saving in this folder at css of Font Awesome.)
 |          ├─ img                                            # folder of images.（image of this folder enter to css.）
-|          └─ pakupaku_game.css                              # file of top page css.（my coding）
+|          └─ fireworks_game_ver1.0.css                      # file of top page css.（my coding）
 └─ js/
-    └─ pakupaku_game                                         # folder of js.
-           └─ pakupaku_game.js                               # file of top page js.(my coding)
+    └─ fireworks_game_ver1.0                                 # folder of js.
+           └─ fireworks_game_ver1.0.js                       # file of top page js.(my coding)
 ```
 ## Install
 1、all files do fork and this all files do clone in local.  
 2、this local files open to web browser.  
 ## URL of Demo site(URL of my portfolio site)
-[http://s-fukushima.sakura.ne.jp/pakupaku_game.html](http://s-fukushima.sakura.ne.jp/pakupaku_game.html "URL of my portfolio site")
+[http://s-fukushima.sakura.ne.jp/fireworks_game_ver1.0.html](http://s-fukushima.sakura.ne.jp/fireworks_game_ver1.0.html "URL of my portfolio site")
